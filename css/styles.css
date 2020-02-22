@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    background: url('../Pictures/Galaxy.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a { text-decoration: none; }
+
+.holder {
+    width: 60%;
+	min-width: 300px;
+	max-width: 1000px;
+    margin:auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin: 5% 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* HEADER */
+
+.header {
+    overflow: hidden;
+    z-index: 1000; /*An element with a higher z-index usually covers a smaller one*/
+	position: relative;
+}
+
+.header img{
+    vertical-align: top;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+/* MAIN */
+
+.main {
+    text-align: center;
+	overflow: hidden;
+	padding: 2% 0;
+	z-index: 1000;
+	position: relative;
+}
+
+.main .info {
+    width: 100%;
+}
+
+.main .info article {
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.main .info article .slide {
+    background: #fff;
+	width: 100%;
+	left: 100%;
+	padding: 3%;
+	position: absolute;
+}
+
+.main .previous {
+    font-size: 35px;
+	line-height: 35px;
+	color: #000;
+	position: absolute;
+	top:50%;
+    z-index: 1000;
+    left: 20px;
+}
+
+.main .next {
+    font-size: 35px;
+	line-height: 35px;
+	color: #000;
+	position: absolute;
+	top:50%;
+    z-index: 1000;
+    right: 20px;
+}
+
+.main .previous:hover, .main .next:hover {
+    color:#2685f3; 
+}
+
+.main .info .name {
+    color: #444444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.main .info .title {
+    color: #003863;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.main .info .location {
+    color: #8d8d8d;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+.main .info .location img {
+    width: 22.5px;
+}
+
+.main .info .location a, a:link, a:active, a:visited {
+    color: #000000;
+}
+
+.main .info .location a:hover {
+	color: #2685f3; 
+}
+
+.main .info .text {
+    color: #003863;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+/* BUTTONS */
+
+.main .info .buttons {
+	width: 100%;
+}
+
+.main .info .buttons span {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 2%;
+	border-radius: 50%;
+	background:#9b9b9b;
+}
+
+.main .info .buttons .active {
+	background: #2685f3;
+}
+
+/* SOCIAL MEDIA */
+
+.socialMedia {
+    text-align: center;
+	padding: 3% 0;
+}
+
+.socialMedia a {
+    display: inline-block;
+	width: 15%;
+	height: 5%;
+	margin: 0 1%;
+}
+
+.socialMedia a img {
+    width: 90%;
+}
