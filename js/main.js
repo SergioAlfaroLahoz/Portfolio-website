@@ -1,9 +1,7 @@
 $(document).ready(function(){
 
 	var header = {
-		parent: $('#header'),
-		slidesNumber: $('#header').children('.slide').length,
-		position: 1
+		parent: $('#header')
 	};
 
 	var info = {
